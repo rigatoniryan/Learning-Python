@@ -3,6 +3,7 @@ def foo():
     print("boii")
 
 
+#
 test = "wowie"
 print(type(test))
 foo()

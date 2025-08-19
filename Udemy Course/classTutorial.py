@@ -12,3 +12,6 @@ class Luffy():
 
     def gumgumpistol(self):
         print("Gum-Gum Pistol!")
+
+    def kingofthepirates(self, food):
+        print("I'm {}, and I'm gonna be King of the Pirates! I love {} btw".format(self.name, food))

@@ -2,6 +2,7 @@ class Luffy():
     
     #Class Object Attribute
     #Same for any instance of a class
+    #can be referenced later with either self.devilFruit or Luffy.devilFruit (this way is preferred)
     devilFruit = 'Gomu Gomu no Mi'
 
     #Init method for user defined attributes

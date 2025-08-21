@@ -10,3 +10,4 @@ luffy.kingofthepirates("meat")
 print(luffy)
 len(luffy)
 del(luffy)
+print(luffy) #removed from memory so gives error

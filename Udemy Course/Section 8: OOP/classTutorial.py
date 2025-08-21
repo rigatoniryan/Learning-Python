@@ -18,4 +18,16 @@ class Luffy(classTutorialBase.Human):
         print("Gum-Gum Pistol!")
 
     def kingofthepirates(self, food):
-        print("I'm {}, and I'm gonna be King of the Pirates! I love {} btw".format(self.name, food))
+        print("I'm {}, and I'm gonna be King of the Pirates! I love {}!!!".format(self.name, food))
+
+    #special/dunder method (denoted by __ which will be called whenever a built in function asks for the str representation of an object)
+    def __str__(self):
+        return "I'm {}, a {} year old rubber human who ate the {}!".format(self.name, self.age, self.devilFruit)
+    
+    #special method for len() calls on objects
+    def __len__(self):
+        return self.age  # Returns the length of the Luffy object as its age
+    
+    #special method for del() calls on objects which actually removes the object from memory
+    def __del__(self):
+        print("Luffy has been deleted!")

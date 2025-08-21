@@ -1,4 +1,5 @@
-class Luffy(): 
+import classTutorialBase
+class Luffy(classTutorialBase.Human): 
     
     #Class Object Attribute
     #Same for any instance of a class
@@ -8,6 +9,8 @@ class Luffy():
     #Init method for user defined attributes
     #methods are functions defined inside a class
     def __init__(self, name, age):
+        classTutorialBase.Human.__init__(self)  # Call the parent class's init method
+        print("I am a rubber human!")
         self.name = name
         self.age = age
 
